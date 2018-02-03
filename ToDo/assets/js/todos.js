@@ -33,10 +33,13 @@
  //click on x delete to do
 
  $("ul").on("click", "span", function(event){
- 	$(this).parent().fadeOut(700, function(){
+ 	alert("Do you want to delete this item?");
+ 		$(this).parent().fadeOut(700, function(){
+
 		$(this).remove();
 
  	});
+
  	event.stopPropagation();
  });
 
